@@ -1,0 +1,18 @@
+flowchart TB
+    ISP((Internet / WAN Provider))
+    HQFW[HQ Firewall / WAN Edge]
+    HQCORE[HQ Core Switch]
+    HQACC[HQ Access Layer]
+    BR1WAN[Branch 1 WAN Edge / Firewall]
+    BR1SW[Branch 1 Switches]
+    BR2WAN[Branch 2 WAN Edge / Firewall]
+    BR2SW[Branch 2 Switches]
+
+    ISP --- HQFW
+    HQFW --- HQCORE
+    HQCORE --- HQACC
+    HQFW ---|WAN / VPN / MPLS / SD-WAN - verify| BR1WAN
+    BR1WAN --- BR1SW
+    HQFW ---|WAN / VPN / MPLS / SD-WAN - verify| BR2WAN
+    BR2WAN --- BR2SW
+    BR1WAN <-.->|Branch path - verify| BR2WAN

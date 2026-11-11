@@ -1,0 +1,4 @@
+﻿Site,Hostname,Device Role,Vendor,Model,Serial Number (sanitize before public sharing),Software Version,Management IP (sanitize),Uptime,HA/Stack Role,Location/Rack,Support Status,Assessment Status,Evidence ID,Notes
+HQ,HQ-CORE-01,Core Switch,Cisco,Example only,REDACTED,To verify,10.0.0.10,To verify,Member/Standalone,MDF,To verify,Not Verified,,Replace all example values
+BR1,BR1-SW-01,Access Switch,To verify,To verify,REDACTED,To verify,10.0.1.10,To verify,Standalone,IDF,To verify,Not Verified,,
+BR2,BR2-FW-01,Firewall,To verify,To verify,REDACTED,To verify,10.0.2.10,To verify,To verify,MDF,To verify,Not Verified,,

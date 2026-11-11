@@ -1,0 +1,29 @@
+flowchart TB
+    WAN((WAN / Internet Providers))
+    subgraph HQ[Headquarters]
+      HQISP1[Primary ISP]
+      HQISP2[Secondary ISP]
+      HQHA[High Availability Firewall Pair]
+      HQCORE1[Core Switch A]
+      HQCORE2[Core Switch B]
+      HQACCESS[Access / Wireless / Services]
+      HQISP1 --> HQHA
+      HQISP2 --> HQHA
+      HQHA --> HQCORE1
+      HQHA --> HQCORE2
+      HQCORE1 --> HQACCESS
+      HQCORE2 --> HQACCESS
+    end
+    subgraph B1[Branch Office 1]
+      B1FW[Branch Firewall / WAN Edge]
+      B1SW[Redundant or Resilient Switching]
+      B1FW --> B1SW
+    end
+    subgraph B2[Branch Office 2]
+      B2FW[Branch Firewall / WAN Edge]
+      B2SW[Redundant or Resilient Switching]
+      B2FW --> B2SW
+    end
+    WAN --- HQHA
+    HQHA <-->|Approved resilient WAN design| B1FW
+    HQHA <-->|Approved resilient WAN design| B2FW

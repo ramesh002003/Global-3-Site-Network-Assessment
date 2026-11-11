@@ -1,0 +1,2 @@
+﻿Site,Circuit Label (sanitize),Provider,Circuit Type,Bandwidth Contracted,Handoff,Local Interface,Remote Endpoint (sanitize),Primary/Backup,SLA,Latency,Packet Loss,Jitter,Failover Evidence,Assessment Status,Notes
+HQ,HQ-WAN-01,To verify,MPLS / Internet / SD-WAN,To verify,To verify,To verify,REDACTED,Primary,To verify,Not tested,Not tested,Not tested,Not tested,Not Verified,

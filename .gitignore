@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+.env
+secrets/
+client-data/
+evidence-private/
+*.pcap
+*.conf
+*.cfg
+*.key
+*.pem
